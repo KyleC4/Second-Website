@@ -206,7 +206,6 @@ input {
 
 h3 {
     font-size: 32px;
-    padding-bottom: 20px;
 }
 
 .container {
@@ -224,7 +223,7 @@ h3 {
 
 .features__para {
 font-size: 20px;
-padding: 30px 100px 30px 100px;
+padding: 10px 100px 30px 120px;
 width: 1000px;
 }
 
@@ -232,9 +231,9 @@ width: 1000px;
     position: relative;
 }
 
-#servicess:after,
-#servicess:before {
-    background: url(assets/wave.svg);
+#header:after,
+#header:before {
+    background: url(assets/Waves.svg);
     content: "";
     position: absolute;
     width: 101vw;
@@ -246,12 +245,12 @@ width: 1000px;
 }
 
 
-#servicess:before {
+#header:before {
     top: 1px;
     transform: translateY(-100%);
 }
 
-#servicess:after {
+#header:after {
     transform: translateY(100%) rotate(180deg);
     bottom: 1px;
 }
@@ -263,7 +262,7 @@ width: 1000px;
 }
 
 .service {
-    padding: 0 24px;
+    padding: 24px 24px;
     width: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
@@ -282,11 +281,26 @@ width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 24px;
     font-size: 32px;
     margin: 0 24px;
 }
 
 .service__subtitle {
     font-size: 20px;
+}
+
+/* ABOUT */
+
+.about__img {
+    display: flex;
+    align-self: center;
+}
+
+.about__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
