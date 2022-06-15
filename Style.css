@@ -21,12 +21,12 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 p {
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 a {
@@ -292,15 +292,29 @@ width: 1000px;
 
 /* ABOUT */
 
-.about__img {
-    display: flex;
-    align-self: center;
+#about {
+   padding: 100px 100px 100px 100px;
+   background-color: #ddefff;
 }
 
 .about__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about__row {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    margin: 20px;
+}
+
+.about__img {
+    display: flex;
+    align-self: center;
+    border: 2px dashed;
+    border-color: #000;
+    margin-left: 30px;
 }
