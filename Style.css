@@ -16,7 +16,6 @@ html {
 
 h1, h2, h3, h4, h5, h6, span {
     color: #242424;
-    text-align: center;
     line-height: 1,25;
 }
 
@@ -176,16 +175,17 @@ button {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
 }
 
 .home__description {
     display: flex;
-    align-self: center;
     flex-direction: column;
+    padding: 20px;
+    width: 40%;
 }
 
 form {
-    width: 40%;
     max-width: 600px;
     display: flex;
     flex-direction: row;
@@ -198,8 +198,8 @@ input {
 }
 
 .header__img {
-    display: flex;
-    align-self: center;
+    padding: 20px;
+    padding-left: 100px;
 }
 
 /* FEATURES/SEVICES */
@@ -208,11 +208,8 @@ h3 {
     font-size: 32px;
 }
 
-.container {
-    padding: 80px 0;
-}
 
-.row__two {
+.services__row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -317,4 +314,21 @@ width: 1000px;
     border: 2px dashed;
     border-color: #000;
     margin-left: 30px;
+}
+
+/* HOW TO */
+
+.howto__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.howto__row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
 }
